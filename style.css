@@ -1,0 +1,298 @@
+:root{
+    --amir: black;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'sidebar main main main'
+    'sidebar main main main'
+    'sidebar footer footer footer'
+    ;
+}
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+body{
+    background-image: url(./IMG-20190613-WA0026.jpg) ;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    
+}
+
+@keyframes ship{
+    
+        0%{}
+        0%{margin-left: 100%;}
+    
+}
+
+main{
+    display: flex;
+}
+
+.sideNav{
+    grid-area: sidebar;
+    width: 24%;
+    height: 100vh;
+}
+
+#box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--amir);
+    
+}
+
+#box li{
+    list-style-type: none;
+    transition: background-color 1s;
+    margin-right: 20px ;
+    width: 100%;
+
+}
+li:hover{
+    background-color: chartreuse;
+    
+}
+#box a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.item2{
+    grid-area: main;
+    
+}
+
+
+
+footer{
+    grid-area: footer;
+
+}
+
+
+h1{font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+    
+}
+h3{
+    color: yellowgreen;
+}
+
+h4{
+    color: crimson;
+}
+
+#center{
+    text-align: center;
+}
+
+#pics{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+    
+    
+}
+#pics article{
+    width: 24%;
+    height: 30vh;
+    
+    
+}
+
+
+#pics img{
+    width: 80%;
+    height: 80%;
+    border-radius: 10px ;
+    border: black solid 2px;
+}
+article a{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    margin-left: 50px;
+    
+    
+}
+
+#event{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-evenly;
+    
+}
+
+#event img{
+    width: 80%;
+    height: 80%;
+    border-radius: 10px ;
+    border: black solid 2px;
+}
+
+#event h6{
+    color: white;
+    text-align: center;
+    margin-right: 40px;
+}
+
+#event p{
+    color: black;
+    background: white;
+    text-align: center;
+    margin-right: 30px;
+    font-weight: bolder;
+}
+h4{
+    text-align: center;
+}
+h5{
+    margin-top: 60px;
+    background-color: white;
+    height: 30px;
+    width: 210px;
+    margin-left: 390px;
+}
+
+.form{
+    
+    background-color: white;
+    width: 185px;
+    height: 266px;
+    margin-left: 400px;
+}
+
+
+ footer div {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(157, 255, 0);
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+  
+  #div1 {animation-timing-function: linear;}
+  #div2 {animation-timing-function: ease;}
+  #div3 {animation-timing-function: ease-in;}
+  #div4 {animation-timing-function: ease-out;}
+  #div5 {animation-timing-function: ease-in-out;}
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left:1200px;}
+  }
+
+@media screen and (max-width:425px) {
+    header{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    h1{
+      text-align: left; 
+    }
+}
+
+@media screen and (max-width:425px) {
+    #center{
+      text-align: left;
+      width: 40%; 
+      background-color: white;
+    }
+}
+
+
+  @media screen and (max-width:425px) {
+      .sideNav{
+          display: none;
+      }
+  }
+
+@media screen and (max-width:425px) {
+    #pics article{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    #pics{
+        width: 50%;
+        height: 8%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    #pics a{
+        width: 10%;
+        height: 5%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    h4{
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width:425px){
+    #event img{
+        margin-top: 10px;
+        width: 40%;
+        height: 40%;
+        justify-content: space-evenly;
+    }
+
+}
+@media screen and (max-width:425px) {
+    #event h6{
+        text-align: left;
+    }
+}
+@media screen and (max-width:425px) {
+    #event p{
+        text-align: left;
+        background-color: none;
+    }
+}
+
+
+
+@media screen and (max-width:425px) {
+    h4{
+        text-align: left;
+    }
+    #event article {
+        width: 100%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:425px) {
+    .form{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:425px) {
+    footer{
+        display: none;
+    }
+}
+

@@ -1,0 +1,78 @@
+body{
+    background-color: darkkhaki;
+}
+
+h2{
+    text-align: center;
+    /* margin-top: 40vh; */
+}
+
+hr{
+    margin-top: 30vh;
+}
+.pic1{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px ;
+    border: solid black;
+}
+article{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+div {
+    width: 20%;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+div img{
+    width: 100%;
+    
+    clip-path: circle(35%);
+}
+
+#kelev{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.Room1{
+ width: 45%;
+ height: 80vh;
+
+}
+.Room1 img{
+   width: 50%;
+   height: 50%;
+   border-radius: 10px;
+}
+.Room1 a{
+    text-align: center;
+}
+
+.form{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.445);
+    
+}
+
+@media screen and (max-width:425px) {
+    .room1{
+        width: 70%;
+        
+    }
+}
+
+@media screen and (max-width:425px) {
+ header{
+     width: 100%;
+ }
+}
